@@ -1,0 +1,33 @@
+{
+  "training_time_minutes": 25.14,
+  "total_epochs": 61,
+  "best_epoch": 61,
+  "best_val_loss": 2358.6486,
+  "final_train_loss": 2275.8179,
+  "config": {
+    "latent_dim": 128,
+    "num_classes": 6,
+    "image_size": 128,
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "num_epochs": 100,
+    "beta_max": 0.15,
+    "beta_warmup_epochs": 40,
+    "early_stopping_patience": 40,
+    "checkpoint_every": 20,
+    "val_split": 0.1,
+    "num_workers": 0,
+    "pin_memory": true,
+    "data_dir": "C:\\projects\\SketchFill\\data\\processed",
+    "checkpoint_dir": "C:\\projects\\SketchFill\\checkpoints",
+    "classes": [
+      "car",
+      "airplane",
+      "cat",
+      "dog",
+      "mountain",
+      "tree"
+    ]
+  },
+  "timestamp": "2026-09-27 14:00:05"
+}

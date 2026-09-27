@@ -1,0 +1,66 @@
+﻿# Virtual environment
+venv/
+.venv/
+
+# Raw & processed data (too large for git)
+data/raw/
+data/processed/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model checkpoints and artifacts (too large for git)
+checkpoints/*.pt
+checkpoints/*.pkl
+checkpoints/*.npy
+checkpoints/*.csv
+checkpoints/training_config.json
+!checkpoints/.gitkeep
+# Keep visualization artifacts for documentation
+# checkpoints/*.png - intentionally not excluded
+# checkpoints/training_summary.json - intentionally not excluded
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.out
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Testing and development artifacts
+test_*.py
+analyze_*.py
+diagnose_*.py
+quick_*.py
+train_*.py
+!models/train.py
+generate_from_*.py
+demo_*.py
+FIXES_APPLIED.md
+monitor_training.py
+final_validation.py
+
+# Old/deprecated files
+app_working.py
+train_free_bits.py
+train_aggressive.py
