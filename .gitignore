@@ -8,8 +8,9 @@ data/processed/
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Model checkpoints and artifacts (too large for git)
-checkpoints/*.pt
+# Model checkpoints and artifacts (using Git LFS for best_model.pt only)
+# checkpoints/best_model.pt - tracked with Git LFS
+checkpoints/epoch_*.pt
 checkpoints/*.pkl
 checkpoints/*.npy
 checkpoints/*.csv
